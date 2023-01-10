@@ -20,7 +20,7 @@
     justify-self: center;
     width: fit-content;
     height: fit-content;
-
+    text-shadow: 2px 2px 5px #000000;
     padding: 1em;
     background: rgba(138, 79, 255, 0.5);
     border-radius: 2em;
@@ -77,4 +77,11 @@
 
   hr{
     width: 50%;
+  }
+
+  p{
+    font-family: 'Karla', sans-serif;
+    color:#C3BEF7;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #000000;
   }

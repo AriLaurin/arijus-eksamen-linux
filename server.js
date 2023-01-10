@@ -7,12 +7,6 @@ const port = 2005; //Save the port
 app.use(express.static("public")); //anything inside the folder, is available as a static file to the front end
 app.use(express.urlencoded({extended: true})); //takes all the data in our form and parses it into an object
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
-
 // view engine
 app.set('view engine', 'ejs');
 
