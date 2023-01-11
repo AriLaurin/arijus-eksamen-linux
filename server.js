@@ -1,6 +1,6 @@
 const express = require("express"); //Import the express dependecy
 const app = express(); //Initiate an express app
-const port = 2005; //Save the port
+const port = 80; //Save the port
 
 
 //middleware
