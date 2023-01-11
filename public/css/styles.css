@@ -154,3 +154,13 @@
   a:hover{
     color:#C3BEF7;
   }
+
+  #error{
+    font-size: 3em;
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+  }
+
+  #sadface{
+    color:#C3BEF7;
+  }

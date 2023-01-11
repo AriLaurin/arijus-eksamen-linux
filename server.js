@@ -26,3 +26,6 @@ app.get("/index", (req,res) => res.render("index"));
 app.listen(port, () => {
     console.log(`Now listening on port ${port}`);
 });
+
+// page not found
+app.use((req, res) => res.status(404).render('404'));
