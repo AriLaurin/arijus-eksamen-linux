@@ -18,13 +18,13 @@
 <body>
             <div class="wrapper">
                 <div class="icons">
-                    <a href="#search">
+                    <a href="#search" aria-label="Close">
                         <i class="fa fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="#map">
+                    <a href="#map" aria-label="Close">
                         <i class="fa fa-regular fa-map"></i>
                     </a>
-                    <a href="#database">
+                    <a href="#database" aria-label="Close">
                         <i class="fa fa-solid fa-server"></i>
                     </a>
                 </div>
@@ -32,24 +32,28 @@
             
 
             <div class="textContainers searchContainer">
-                    <p id="search">SØK</p>
+                    <p id="search" class="DecoPara"><span class="navButton"><a href="#database">DB</a> </span> | SØK | <span class="navButton"> <a href="#map">KART</a> </span></p>
                     <hr>
                     <div class="searcbar">
                         <div class="search-box">
-                            <input type="text" class="input-search" id="input-search" placeholder="Søk i databasen. . .">
+                            <input type="text" class="input-search" id="input-search" aria-label="Close" placeholder="Søk i databasen. . .">
                         </div>
+                    </div>
+                    <div id="results">
+
                     </div>
             </div>
 
             <div class="textContainers mapContainer">
-                <p id="map">KART</p>
+                <p id="map" class="DecoPara"> <span class="navButton"> <a href="#search">SØK</a> </span> | KART | <span class="navButton"> <a href="#database">DB</a></span></p>
                 <hr>
                 <img src="../img/samekart.png" alt="Kart for same-land">
             </div>
 
             <div class="textContainers databaseContainer">
-                <p id="database">FORKLARING AV DATABASE</p>
+                <p id="database" class="DecoPara"> <span class="navButton"> <a href="#map">KART</a> </span> | FORKLARING AV DATABASE | <span class="navButton"> <a href="#search">SØK</a> </span></p>
                 <hr>
+                <img src="../img/ERtabell.png" alt="Bilde av database tabellen">
             </div>
 
         <div class="GoUp">
