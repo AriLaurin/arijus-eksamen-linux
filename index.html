@@ -36,7 +36,7 @@
                     <hr>
                     <div class="searcbar">
                         <div class="search-box">
-                            <input type="text" class="input-search" id="input-search" placeholder="Type to Search. . .">
+                            <input type="text" class="input-search" id="input-search" placeholder="Søk i databasen. . .">
                         </div>
                     </div>
             </div>
@@ -58,7 +58,27 @@
             </a>
         </div>
 
+        <!--firebase initialization-->
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyC_zE-xZ1E5SGdAETAFTaOHbTCqhxpw5gU",
+            authDomain: "linux-eksamen.firebaseapp.com",
+            projectId: "linux-eksamen",
+            storageBucket: "linux-eksamen.appspot.com",
+            messagingSenderId: "898225147910",
+            appId: "1:898225147910:web:8612cbc698d113c4ccf387",
+            measurementId: "G-X5XNWZED9F"
+          };
+          //firebase variable is accessible from firebase.app.js
+          firebase.initializeApp(config);
+          const db = firebase.firestore();  
+        </script>
+
       <!--Scripts-->
+      <script src="../js/firebase.js"></script>
       <script src="https://kit.fontawesome.com/08ca2ffd93.js" crossorigin="anonymous"></script>
 </body>
 </html>
