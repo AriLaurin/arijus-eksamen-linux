@@ -10,13 +10,18 @@ app.use(express.urlencoded({extended: true})); //takes all the data in our form 
 // view engine
 app.set('view engine', 'ejs');
 
-app.get("/index.html", (req,res) => { //get request to the root
-   res.sendFile("index.html", {root:__dirname});  
-});
 
-app.get("/", (req,res) => {
-    res.redirect(301, "index.html");
-});
+//routes
+// app.get("/index.html", (req,res) => { //get request to the root
+//    res.sendFile("index.html", {root:__dirname});  
+// });
+
+// app.get("/", (req,res) => {
+//     res.redirect(301, "index.html");
+// });
+
+app.get("/", (req, res) => res.redirect("/index"));
+app.get("/index", (req,res) => res.render("index"));
 
 app.listen(port, () => {
     console.log(`Now listening on port ${port}`);
