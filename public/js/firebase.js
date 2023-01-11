@@ -32,6 +32,7 @@ const displayResult = function(obj) { //These template strings display HTML if o
             <p><b>Eier:</b> ${obj.Eier}</p>
             <p><b>Serieinndeling:</b> ${obj.Serieinndeling}</p>
             <p><b>Buemerke:</b> ${obj.Buemerke}</p>
+            <img src="${obj.img}" style="max-width: 120px; max-height: 100px;" alt="flokkBilde"></img>
         </div>
         `;
 

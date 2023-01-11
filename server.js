@@ -14,6 +14,10 @@ app.get("/index.html", (req,res) => { //get request to the root
    res.sendFile("index.html", {root:__dirname});  
 });
 
+app.get("/", (req,res) => {
+    res.redirect(301, "index.html");
+});
+
 app.listen(port, () => {
     console.log(`Now listening on port ${port}`);
 });
