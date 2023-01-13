@@ -37,7 +37,7 @@ const displayResult = function(obj) { //These template strings display HTML if o
         `;
 
         div.innerHTML += html;
-    } else if (obj.id.length === 9) { //only flokk has an id with the length of 9
+    } else if (obj.id.length === 9) { //only reinsdyr has an id with the length of 9
         let html = `
         <div id="${obj.id}">
             <h3>navn: ${obj.Navn}</h3>
@@ -48,7 +48,7 @@ const displayResult = function(obj) { //These template strings display HTML if o
         `;
 
         div.innerHTML += html;
-    } else if (obj.id.length === 5) { //only flokk has an id with the length of 5
+    } else if (obj.id.length === 5) { //only beiteområde has an id with the length of 5
         let html = ` 
         <div id="${obj.Navn}">
             <h3>navn: ${obj.Navn}</h3>
